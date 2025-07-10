@@ -4,12 +4,13 @@ import axios from "axios"
 function Register() {
     const [user,setUser] = useState({});
     const[error, setError] = useState("");
+    const API_URL = import.meta.env.VITE_API_URL
 
     const handleSubmit = async () => {
         // console.log(user);
         try{
-            // const url = "http://localhost:8000/api/users/register";
-            const url = "https://cafe-backend-delta.vercel.app/api/users/register";
+            const url = `{API_URL}/api/users/register`;
+            // const url = "https://cafe-backend-delta.vercel.app/api/users/register";
             const result = await axios.post(url,user);
             setError("Data saved successfully")
         } catch (err){
