@@ -1,38 +1,48 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import {useState} from "react"
-function Login() {
-    const [user,setUser] = useState({});
-    const [error,setError] = useState("");
-    const navigate = useNavigate();
-    const API_URL = import.meta.env.VITE_API_URL;
-    const handleSubmit = async () => {
-        try{
-            const url = `${API_URL}/api/users/login`;
-            const result = await axios.post(url,user);
-            setError("welcome")
-            navigate("/");
-        } catch (err){
-            console.log(err);
-            setError("Something went wrong");
-        }
+import { Link } from "react-router-dom";
+import { AppContext } from "../App";
+export default function Login() {
+  const {user, setUser} = useContext(AppContext);
+  const [error, setError] = useState();
+  const Navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL;
+  const handleSubmit = async () => {
+    try {
+      const url = `${API_URL}/api/users/login`;
+      const result = await axios.post(url, user);
+      setUser(result.data);
+      Navigate("/");
+    } catch (err) {
+      console.log(err);
+      setError("Something went wrong");
     }
+  };
   return (
     <div>
-      <h2>Login Form</h2>
-      {error && <p>{error}</p>}
+      <h2>Login</h2>
+      {error}
       <p>
-        <input type="text" onChange={(e)=>setUser({...user,email: e.target.value})} placeholder="Email address"/>
+        <input
+          type="text"
+          placeholder="Email Address"
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
+        />
       </p>
       <p>
-        <input type="password" onChange={(e)=>setUser({...user,password: e.target.value})} placeholder="password"/>
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setUser({ ...user, password: e.target.value })}
+        />
       </p>
-      <button onClick={handleSubmit}>Submit</button>
+      <p>
+        <button onClick={handleSubmit}>Submit</button>
+      </p>
       <hr />
       <Link to="/register">Create Account</Link>
     </div>
   );
 }
-
-export default Login
