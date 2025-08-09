@@ -1,0 +1,97 @@
+.users-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.users-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.users-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.users-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.users-form input,
+.users-form select {
+  flex: 1 1 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.users-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.users-btn:hover {
+  background-color: #0056b3;
+}
+
+.users-btn.cancel {
+  background-color: gray;
+}
+
+.users-btn.delete {
+  background-color: crimson;
+}
+
+.users-btn.delete:hover {
+  background-color: darkred;
+}
+
+.users-search {
+  margin-bottom: 20px;
+}
+
+.users-search input {
+  padding: 8px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.users-table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.users-table th {
+  background-color: #f2f2f2;
+}
+
+.users-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.users-pagination button {
+  margin: 0 10px;
+  padding: 8px 12px;
+}

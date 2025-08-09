@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.cart-galaxy-wrapper {
+  background: linear-gradient(160deg, #0f001f, #1c004d);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.astro-heading {
+  font-size: 32px;
+  color: #00ffe7;
+  text-shadow: 0 0 15px #00ffe7;
+  margin-bottom: 20px;
+}
+
+.error-signal {
+  color: #ff004c;
+  background-color: #2b001a;
+  padding: 10px;
+  border: 2px dashed red;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.item-comet-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+}
+
+.interstellar-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dotted #ff00ff;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: hoverGlow 4s infinite alternate;
+}
+
+.product-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fffaaa;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.space-btn {
+  background-color: #ff00ff;
+  color: black;
+  border: none;
+  padding: 5px 15px;
+  margin: 0 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.space-btn:hover {
+  transform: scale(1.2);
+  background-color: #00ffe7;
+  color: black;
+}
+
+.qty-star {
+  font-size: 20px;
+  color: #ffff00;
+}
+
+.item-total {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.order-planet-value {
+  font-size: 22px;
+  margin-top: 25px;
+  color: #00ffe7;
+}
+
+.order-action-zone {
+  margin-top: 20px;
+}
+
+.launch-order-btn {
+  background: linear-gradient(45deg, #ff00ff, #00ffe7);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.launch-order-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+@keyframes hoverGlow {
+  from {
+    box-shadow: 0 0 5px #00ffe7;
+  }
+  to {
+    box-shadow: 0 0 25px #ff00ff;
+  }
+}

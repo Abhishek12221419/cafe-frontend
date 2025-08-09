@@ -1,0 +1,45 @@
+.plasma-header {
+  background: linear-gradient(to right, #0b0014, #220033, #0b0014);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px dashed #ff00ff;
+  box-shadow: 0 4px 20px rgba(255, 0, 255, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.neon-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #00ffe7, 0 0 20px #ff00ff;
+  margin-bottom: 10px;
+}
+
+.interlink-nexus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.quantum-link {
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.quantum-link:hover {
+  color: #fffb00;
+  text-shadow: 0 0 5px #ff00ff;
+  transform: scale(1.1) rotate(-1deg);
+}
+
+.interlink-divider {
+  color: #ff00ff;
+  font-size: 22px;
+}

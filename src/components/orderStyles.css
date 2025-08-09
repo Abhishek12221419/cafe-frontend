@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.order-galaxy-container {
+  background: linear-gradient(to bottom, #0b0014, #1f0033);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.order-heading {
+  font-size: 30px;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #ff00ff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.order-error {
+  background-color: #ff0033;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border: 2px dashed yellow;
+}
+
+.order-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00ffe7;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.order-detail {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #ffffaa;
+}
+
+.order-detail span {
+  color: #00ffe7;
+}
+
+.order-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ff00ff;
+  padding: 10px;
+}
+
+.order-table th {
+  background-color: #220033;
+  color: #fffb00;
+  font-size: 16px;
+}
+
+.order-table td {
+  background-color: #110022;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.star-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #00ffe7, transparent);
+  margin-top: 20px;
+}

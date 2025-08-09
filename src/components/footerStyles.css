@@ -1,0 +1,24 @@
+.supernova-footer {
+  background: linear-gradient(90deg, #330066, #000000, #330066);
+  padding: 25px;
+  text-align: center;
+  border-top: 3px double #ff00ff;
+  box-shadow: 0 -4px 20px rgba(255, 0, 255, 0.3);
+  margin-top: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.footer-text {
+  color: #00ffe7;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #ff00ff;
+  font-size: 20px;
+  animation: blink-stars 2s infinite;
+}
+
+@keyframes blink-stars {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; transform: scale(1.02); }
+  100% { opacity: 1; }
+}
